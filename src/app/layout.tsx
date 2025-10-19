@@ -14,7 +14,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://agri-trace-sable.vercel.app/"),
+  metadataBase: new URL(
+    process.env.VERCEL_URL
+      ? `https://{process.env.VERCEL_URL}`
+      : "http://localhost:3000"
+  ),
   title: "AgriTrace",
   description:
     "AgriTraceは圃場に設置されたセンサから移動軌跡を取得するアプリケーションです",
