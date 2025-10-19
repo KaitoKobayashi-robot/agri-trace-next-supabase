@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     title: "AgriTrace",
     description:
       "AgriTraceは圃場に設置されたセンサから移動軌跡を取得するアプリケーションです",
-    images: "/AgriTrace_ogp",
+    images: "/AgriTrace_ogp.png",
   },
 };
 
